@@ -26,6 +26,8 @@ import {
   firebase,
   kotlin,
   android,
+  gdg_logo,
+  epoch_logo,
 } from "../assets";
 
 export const navLinks = [
@@ -125,7 +127,7 @@ const experiences = [
   {
     title: "Native App Developer",
     company_name: "Epoch",
-    icon: starbucks,
+    icon: epoch_logo,
     iconBg: "#383E56",
     date: "August 2024 - Present",
     points: [
@@ -138,56 +140,55 @@ const experiences = [
   {
     title: "Application Development Core",
     company_name: "GDG IIIT SriCity",
-    icon: tesla,
+    icon: gdg_logo,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Sepetember 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
-  {
-    title: "Oratory Lead",
-    company_name: "Keynote",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Oratory Lead",
+  //   company_name: "Keynote",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 
 ];
 
-const testimonials = [
+const blogPosts = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Building Modern Web Applications with React and Three.js",
+    excerpt: "Explore the intersection of 3D graphics and web development as we dive into creating immersive experiences using React and Three.js...",
+    content: "Full blog post content here...",
+    author: "Ritovan Dasgupta",
+    date: "Oct 30, 2024",
+    readTime: "5 min read",
+    category: "Web Development",
+    image: "/api/placeholder/800/400",
+    tags: ["React", "Three.js", "WebGL"],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "The Future of Mobile Development with Kotlin",
+    excerpt: "Discover how Kotlin is revolutionizing Android development and why it's becoming the preferred choice for modern mobile applications...",
+    content: "Full blog post content here...",
+    author: "Ritovan Dasgupta",
+    date: "Oct 25, 2024",
+    readTime: "7 min read",
+    category: "Mobile Development",
+    image: "/api/placeholder/800/400",
+    tags: ["Kotlin", "Android", "Mobile"],
   },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  // Add more blog posts as needed
 ];
 
 const projects = [
@@ -277,4 +278,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, blogPosts, projects };

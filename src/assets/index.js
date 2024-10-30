@@ -34,8 +34,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Ritovan_profile_picture from "./Ritovan_profile_picture.jpg";
+import gdg_logo from "./gdg_logo.png";
+import epoch_logo from "./epoch_logo.png";
 
 export {
+  gdg_logo,
+  epoch_logo,
   firebase,
   kotlin,
   android,
