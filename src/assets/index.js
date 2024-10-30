@@ -37,8 +37,14 @@ import Ritovan_profile_picture from "./Ritovan_profile_picture.jpg";
 import gdg_logo from "./gdg_logo.png";
 import epoch_logo from "./epoch_logo.png";
 import crispr from "./crispr.jpg";
+import appdev from "./appdev.jpg";
+import webdev from "./Web-Development.jpg";
+import war from "./war.jpg";
 
 export {
+  war,
+  appdev,
+  webdev,
   crispr,
   gdg_logo,
   epoch_logo,
