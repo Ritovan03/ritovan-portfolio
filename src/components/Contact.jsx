@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import { Linkedin, Github, Twitter, Instagram } from "lucide-react";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -31,43 +31,44 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+    // Simulate sending delay
+    setTimeout(() => {
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }, 1000); // 1 second delay to simulate sending
   };
 
+  const socialLinks = [
+    { 
+      icon: <Linkedin className="w-6 h-6" />, 
+      url: "https://linkedin.com/your-profile",
+      name: "LinkedIn"
+    },
+    { 
+      icon: <Github className="w-6 h-6" />, 
+      url: "https://github.com/your-profile",
+      name: "GitHub"
+    },
+    { 
+      icon: <Twitter className="w-6 h-6" />, 
+      url: "https://twitter.com/your-profile",
+      name: "Twitter"
+    },
+    { 
+      icon: <Instagram className="w-6 h-6" />, 
+      url: "https://instagram.com/your-profile",
+      name: "Instagram"
+    }
+  ];
+
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -121,11 +122,30 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        {/* Social Media Bar */}
+        <div className="mt-8 pt-8 border-t border-gray-700">
+          <p className="text-white font-medium mb-4">Connect with me</p>
+          <div className="flex gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-secondary transition-colors duration-300 ease-in-out"
+                aria-label={`Visit my ${social.name} profile`}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-[800px] md:h-[650px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>

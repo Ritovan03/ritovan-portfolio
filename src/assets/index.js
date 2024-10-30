@@ -36,8 +36,10 @@ import tripguide from "./tripguide.png";
 import Ritovan_profile_picture from "./Ritovan_profile_picture.jpg";
 import gdg_logo from "./gdg_logo.png";
 import epoch_logo from "./epoch_logo.png";
+import crispr from "./crispr.jpg";
 
 export {
+  crispr,
   gdg_logo,
   epoch_logo,
   firebase,

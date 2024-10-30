@@ -28,6 +28,7 @@ import {
   android,
   gdg_logo,
   epoch_logo,
+  crispr
 } from "../assets";
 
 export const navLinks = [
@@ -188,6 +189,30 @@ const blogPosts = [
     image: "/api/placeholder/800/400",
     tags: ["Kotlin", "Android", "Mobile"],
   },
+  {
+    title: "CRISPR -",
+    excerpt: "",
+    content: "",
+    author: "Ritovan Dasgupta",
+    date: "Oct 25, 2024",
+    readTime: "7 min read",
+    category: "Tech for Good",
+    image: crispr,
+
+    tags: ["Biology", "Eugenics"],
+  },
+  {
+    title: "Impact of War on Technology Advancement",
+    excerpt: "",
+    content: "",
+    author: "Ritovan Dasgupta",
+    date: "Oct 25, 2024",
+    readTime: "7 min read",
+    category: "Tech for Good",
+    image: "/api/placeholder/800/400",
+    tags: ["Philosophy", "History","Science"],
+  },
+
   // Add more blog posts as needed
 ];
 
