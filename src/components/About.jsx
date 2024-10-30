@@ -62,6 +62,7 @@ const About = () => {
             Node.js, Express.js, and related frameworks to create scalable and efficient solutions. 
             Known for my quick learning ability and strong collaborative approach, 
             I aim to develop impactful, real-world applications that prioritize user experience and reliability.
+            I love solving DSA problems and regulalry participate in contests in platforms like leetcode, hackerEarth.
           </motion.p>
         </motion.div>
       </div>

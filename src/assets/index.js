@@ -40,8 +40,16 @@ import crispr from "./crispr.jpg";
 import appdev from "./appdev.jpg";
 import webdev from "./Web-Development.jpg";
 import war from "./war.jpg";
+import leetcode from "./leetcode.svg";
+import mintbolt from "./mintbolt.png";
+import sparkchain from "./sparkchain.png";
+import terrapulse from "./terrapulse_logo.jpg"
 
 export {
+  mintbolt,
+  sparkchain,
+  terrapulse,
+  leetcode,
   war,
   appdev,
   webdev,
