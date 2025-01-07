@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Conditionally render ComputersCanvas only for non-mobile devices */}
+      {/* Conditionally rend ComputersCanvas only for non-mobile devices */}
       {!isMobile && <ComputersCanvas />}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
