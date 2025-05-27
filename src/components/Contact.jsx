@@ -138,7 +138,7 @@ const Contact = () => {
             ))}
           </div>
           <a
-            href="https://docs.google.com/document/d/1HfQkoDFZJhyCFPqShwk-Cu3OcekE9tIHhj-m-2UGkYY/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1m3gLs2yFRSYNvSrgdDBWyBEiXKy8Ketr/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-tertiary py-2 px-4 rounded-xl text-white font-bold shadow-md shadow-primary hover:bg-secondary transition-colors duration-300 ease-in-out"
