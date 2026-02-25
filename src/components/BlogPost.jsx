@@ -6,10 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 
-import { styles } from "../styles";
 import { blogPosts } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
 
 // Import highlight.js CSS
 import "highlight.js/styles/github-dark.css";
@@ -43,7 +40,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="w-full min-h-screen bg-primary">
+    <div className="w-full min-h-screen bg-primary pt-6">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 py-10">
         {/* Back Button */}
         <motion.button
@@ -57,20 +54,13 @@ const BlogPost = () => {
           Back to Blogs
         </motion.button>
 
-        {/* Hero Image */}
-        <motion.div
-          variants={fadeIn("up", "spring", 0, 1)}
-          className="w-full h-64 sm:h-80 md:h-96 mb-8 rounded-2xl overflow-hidden"
-        >
-          <img
-            src={post.image}
-            alt={post.title}
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-
         {/* Article Header */}
-        <motion.div variants={textVariant()} className="mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1.25 }}
+          className="mb-8"
+        >
           <div className="flex flex-wrap items-center gap-4 text-secondary text-sm mb-4">
             <span className="bg-primary/80 px-3 py-1 rounded-full text-white">
               {post.category}
@@ -100,7 +90,9 @@ const BlogPost = () => {
 
         {/* Article Content */}
         <motion.div
-          variants={fadeIn("up", "spring", 0.2, 1)}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 0.2, duration: 1 }}
           className="prose prose-invert prose-lg max-w-none mb-12"
         >
           <div className="markdown-content text-secondary leading-relaxed">
@@ -183,7 +175,9 @@ const BlogPost = () => {
 
         {/* Tags */}
         <motion.div
-          variants={fadeIn("up", "spring", 0.4, 1)}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 0.4, duration: 1 }}
           className="flex flex-wrap gap-2 mb-8"
         >
           {post.tags.map((tag, index) => (
@@ -199,7 +193,9 @@ const BlogPost = () => {
 
         {/* Navigation Footer */}
         <motion.div
-          variants={fadeIn("up", "spring", 0.6, 1)}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 0.6, duration: 1 }}
           className="border-t border-white/10 pt-8 mt-8"
         >
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -226,4 +222,4 @@ const BlogPost = () => {
   );
 };
 
-export default SectionWrapper(BlogPost, "blog-post");
+export default BlogPost;

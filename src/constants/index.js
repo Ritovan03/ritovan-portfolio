@@ -18,13 +18,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   firebase,
   kotlin,
@@ -35,6 +28,7 @@ import {
   terrapulse,
   mintbolt,
   sparkchain,
+  enest_logo,
 } from "../assets";
 
 export const navLinks = [
@@ -126,7 +120,7 @@ const experiences = [
   {
     title: "SDE Intern",
     company_name: "ENest",
-    icon: epoch_logo,
+    icon: enest_logo,
     iconBg: "#383E56",
     date: "June 2025 - Present",
     points: [
@@ -228,7 +222,7 @@ The potential applications of React and Three.js are vast and continue to expand
     content: `# The Evolution of Android Development with Kotlin
 
 **Kotlin** has rapidly become the go-to language for Android development, celebrated for its conciseness, safety, and modern syntax. Developed by JetBrains, Kotlin was introduced as an official language for Android by Google in 2017, and since then, it has continued to gain popularity among developers due to its seamless integration with the Android ecosystem and its support for functional programming concepts.
-  
+
 ## Core Strengths of Kotlin
 
 One of Kotlin's key strengths is its ability to reduce boilerplate code, making applications easier to read and maintain. Features like **null safety** help prevent common bugs, such as null pointer exceptions, improving app stability.
@@ -242,8 +236,6 @@ One of Kotlin's key strengths is its ability to reduce boilerplate code, making 
 Additionally, Kotlin's compatibility with Java allows developers to gradually migrate Java codebases or even use both languages within the same project, making the transition to Kotlin much more accessible.
 
 ## Kotlin Multiplatform Revolution
-  
-## Kotlin Multiplatform Revolution
 
 Kotlin Multiplatform takes development efficiency to the next level by enabling code reuse across multiple platforms:
 
@@ -256,8 +248,6 @@ Kotlin Multiplatform takes development efficiency to the next level by enabling 
 
 This capability is particularly appealing to businesses and developers who want to create cross-platform applications without compromising performance or native functionality.
 
-## Asynchronous Programming with Coroutines
-  
 ## Asynchronous Programming with Coroutines
 
 The future of mobile development with Kotlin looks promising, as Google and JetBrains continue to enhance the language with powerful features. **Coroutines** enable developers to handle asynchronous tasks more efficiently:
@@ -289,8 +279,8 @@ class UserViewModel : ViewModel() {
 This is crucial for modern mobile apps that require real-time data updates and responsive user interfaces.
 
 ## The Android Ecosystem Advantage
-  
-  As Kotlin's ecosystem expands and more libraries and tools emerge, it's likely to become an even more integral part of Android development:
+
+As Kotlin's ecosystem expands and more libraries and tools emerge, it's likely to become an even more integral part of Android development:
 
 ### Modern Android Development Stack:
 - **Jetpack Compose** - Declarative UI toolkit built for Kotlin
@@ -321,7 +311,7 @@ The future belongs to developers who embrace Kotlin's modern approach to softwar
     content: `# CRISPR - Revolutionizing Genetics for Good
 
 **CRISPR**, short for "Clustered Regularly Interspaced Short Palindromic Repeats," is a revolutionary genetic editing tool that enables scientists to precisely alter DNA. Its discovery marked a new era in genetic engineering, allowing unprecedented control over gene manipulation. Initially observed as a natural defense mechanism in bacteria, CRISPR has now become a foundational technology for genome editing across various fields.
-    
+
 ## How CRISPR Works
 
 CRISPR functions like a molecular pair of scissors, capable of cutting DNA at specific locations. The system consists of two main components:
@@ -347,8 +337,6 @@ In healthcare, CRISPR opens unprecedented doors to treating genetic disorders at
 Researchers are currently exploring how to deliver these edits safely and effectively, ensuring they target only the intended genes while leaving the rest of the genome intact.
 
 ## Agricultural Innovation
-    
-## Agricultural Innovation
 
 Agriculture stands to benefit immensely from CRISPR technology, offering sustainable solutions to global food challenges:
 
@@ -361,8 +349,6 @@ Agriculture stands to benefit immensely from CRISPR technology, offering sustain
 
 By editing genes within plants, scientists can create strains that require fewer pesticides, need less water, and yield more nutritious produce. This sustainable approach could be key in addressing food insecurity and promoting environmental conservation.
 
-## Ethical Considerations & Challenges
-    
 ## Ethical Considerations & Challenges
 
 Yet, as promising as CRISPR is, it also raises significant ethical questions that must be carefully addressed:
@@ -385,8 +371,6 @@ The technology's power to alter life's fundamental code requires careful conside
 - **Personalized Medicine** - Tailored treatments based on individual genetics
 
 ## The Road Ahead
-    
-## The Road Ahead
 
 CRISPR's journey from scientific curiosity to a transformative tool showcases the power of innovation in tackling global challenges. As research advances and regulatory frameworks evolve, CRISPR could unlock solutions to some of the most pressing issues facing our world.
 
@@ -399,7 +383,6 @@ CRISPR's journey from scientific curiosity to a transformative tool showcases th
 > *"CRISPR represents more than just a scientific breakthrough—it's a paradigm shift that puts the power to heal, feed, and protect our world directly into our hands. The question isn't what we can do, but what we should do."*
 
 This embodies a "Tech for Good" approach with profound implications for creating a healthier, more sustainable future for all humanity.`,
-    author: "Ritovan Dasgupta",
     author: "Ritovan Dasgupta",
     date: "Oct 25, 2024",
     readTime: "15 min read",
@@ -416,7 +399,7 @@ This embodies a "Tech for Good" approach with profound implications for creating
     content: `# The Impact of War on Technology Advancement
 
 War has often been a catalyst for rapid technological advancement, with conflicts throughout history driving nations to innovate in ways that profoundly influence both military and civilian life. From the development of radar and jet engines during World War II to the internet's origin as a military project, war has frequently led to breakthroughs that continue to shape society long after the conflicts end.
-  
+
 ## The War-Innovation Paradox
 
 The relationship between war and technology is complex and multifaceted. On one hand, the urgent need for defense and survival propels massive investments in research and development, leading to innovations that might not emerge in peacetime.
@@ -434,8 +417,6 @@ The relationship between war and technology is complex and multifaceted. On one 
 
 For instance, the invention of the computer was accelerated during World War II as nations sought ways to break enemy codes. Similarly, nuclear power, which now serves as a significant source of global energy, originated from efforts to create powerful weapons.
 
-## Dual-Use Technology: Military to Civilian
-  
 ## Dual-Use Technology: Military to Civilian
 
 Yet, the consequences of war-driven advancements are mixed. Many technologies initially developed for military purposes have found transformative civilian applications:
@@ -458,8 +439,6 @@ Yet, the consequences of war-driven advancements are mixed. Many technologies in
 
 Technologies initially intended for military use often find beneficial applications; for example, GPS was originally a military navigation tool and now underpins countless civilian applications. However, these advancements can also escalate future conflicts, as countries strive to match or surpass each other's technological capabilities.
 
-## Medical Advances Born from Conflict
-  
 ## Medical Advances Born from Conflict
 
 In the medical field, war has likewise driven unprecedented progress in medical science and healthcare:
@@ -502,8 +481,6 @@ The critical question for our future is: *Can we maintain the pace of innovation
 - **Global Health Challenges** - Pandemic preparedness, aging populations, rare diseases
 - **Digital Transformation** - AI, quantum computing, virtual reality
 
-## Lessons for the Future
-  
 ## The Path Forward
 
 War's influence on technology serves as a powerful reminder of humanity's capacity for innovation in times of crisis. However, it also challenges us to consider how we can harness that same innovative spirit for peaceful purposes.

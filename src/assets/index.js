@@ -25,17 +25,10 @@ import firebase from "./tech/firebase.svg";
 import kotlin from "./tech/kotlin.svg";
 import android from "./tech/android.jpg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import Ritovan_profile_picture from "./Ritovan_profile_picture.jpg";
 import gdg_logo from "./gdg_logo.png";
 import epoch_logo from "./epoch_logo.png";
+import enest_logo from "./company/enest-logo.png";
 import crispr from "./crispr.jpg";
 import appdev from "./appdev.jpg";
 import webdev from "./Web-Development.jpg";
@@ -43,9 +36,10 @@ import war from "./war.jpg";
 import leetcode from "./leetcode.svg";
 import mintbolt from "./mintbolt.png";
 import sparkchain from "./sparkchain.png";
-import terrapulse from "./terrapulse_logo.jpg"
+import terrapulse from "./terrapulse_logo.jpg";
 
 export {
+  enest_logo,
   mintbolt,
   sparkchain,
   terrapulse,
@@ -81,12 +75,5 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  Ritovan_profile_picture
+  Ritovan_profile_picture,
 };
