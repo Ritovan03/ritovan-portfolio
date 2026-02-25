@@ -37,8 +37,16 @@ import leetcode from "./leetcode.svg";
 import mintbolt from "./mintbolt.png";
 import sparkchain from "./sparkchain.png";
 import terrapulse from "./terrapulse_logo.jpg";
+import maitri from "./maitri.png";
+import gcp_proj from "./gcp_proj.png";
+import gcp from "./tech/gcp.svg";
+import redis from "./tech/redis.svg";
 
 export {
+  redis,
+  gcp,
+  gcp_proj,
+  maitri,
   enest_logo,
   mintbolt,
   sparkchain,

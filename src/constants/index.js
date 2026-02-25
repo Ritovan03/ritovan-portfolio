@@ -29,6 +29,10 @@ import {
   mintbolt,
   sparkchain,
   enest_logo,
+  maitri,
+  gcp_proj,
+  gcp,
+  redis,
 } from "../assets";
 
 export const navLinks = [
@@ -99,8 +103,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "gcp",
+    icon: gcp,
+  },
+  {
+    name: "redis",
+    icon: redis,
   },
   {
     name: "git",
@@ -124,10 +132,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2025 - Present",
     points: [
-      "Developing and maintaining mobile applications using Kotlin and other related technologies.",
-      "Collaborating with cross-functional teams including machine learning, NLP engineers to create high-quality products.",
-      "Implementing and integrating machine learning models effectively within mobile apps to enhance user experience.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led design, development, and production deployment of the mobile app, serving 100+ active users on the Play Store.",
+      "Integrated Razorpay Payment Gateway with real-time webhook handling for seamless course enrollment transactions.",
+      "Built scalable RESTful APIs using Node.js and Express with JWT authentication, validation middleware, and error handling.",
+      "Optimized MVVM architecture in Flutter with efficient state management and local caching, improving API efficiency by 30%.",
     ],
   },
   {
@@ -551,25 +559,88 @@ const projects = [
     source_code_link: "https://github.com/Ritovan03/MintBolt",
   },
   {
-    name: "SparkChain",
+    name: "Smart Campus",
     description:
-      "A Decentralized Web3 crowdfunding platform powered by Ethereum  offering a more efficient, inclusive, and secure way to fund innovative projects.",
+      "SmartCampus is a real-time, full-stack campus monitoring platform built with React, Firebase/Firestore, Node.js, and GCP Functions for tracking energy, water, weather, and building infrastructure with KPI dashboards, automated data ingestion, and role-based access control.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "solidity",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "ethereum",
+        name: "gemini",
         color: "pink-text-gradient",
       },
     ],
-    image: sparkchain,
-    source_code_link: "https://github.com/Ritovan03/SparkChain",
+    image: terrapulse,
+    source_code_link: "https://github.com/Ritovan03/TerraPulse",
+  },
+  {
+    name: "GCP RAG Engine",
+    description:
+      "A practical, serverless Retrieval-Augmented Generation (RAG) engine on Google Cloud Platform. This project uses Google Cloud Functions to retrieve context from documents in Cloud Storage and a Vertex AI LLM to generate answers.",
+    tags: [
+      {
+        name: "GCP Vertex AI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "GCP Cloud Run",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gcp_proj,
+    source_code_link: "https://github.com/Ritovan03/gcp-rag-engine",
+  },
+  {
+    name: "Maitri",
+    description:
+      "Maitri is a privacy-preserving, multimodal AI-powered web application designed for the AI for Early Mental Health Detection.It acts as a personal mental wellness companion, empowering users to understand, track, and improve their emotional well-being through analysis of text, audio, and video cues.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vision Transformer",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OpenCV",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: maitri,
+    source_code_link: "https://github.com/Ritovan03/Maitri",
+  },
+  {
+    name: "Luna",
+    description:
+      "Mobile App which allows user to identify & learn about animals & plants using gen AI. Along with that comes with a marketplace for environment conscious buyers.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gemini",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: terrapulse,
+    source_code_link: "https://github.com/Ritovan03/TerraPulse",
   },
 ];
 
