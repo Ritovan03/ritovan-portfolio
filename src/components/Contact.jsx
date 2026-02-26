@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Linkedin, Github, Twitter, Instagram } from "lucide-react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -30,19 +32,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error("Please fill in all three fields before sending.", {
+        position: "bottom-right",
+        theme: "dark",
+      });
+      return;
+    }
+
     setLoading(true);
 
-    // Simulate sending delay
     setTimeout(() => {
       setLoading(false);
-      alert("Thank you. I will get back to you as soon as possible.");
-
-      setForm({
-        name: "",
-        email: "",
-        message: "",
+      toast.success("Message sent! I'll get back to you soon.", {
+        position: "bottom-right",
+        theme: "dark",
       });
-    }, 1000); // 1 second delay to simulate sending
+      setForm({ name: "", email: "", message: "" });
+    }, 1000);
   };
 
   const socialLinks = [
@@ -154,6 +162,8 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      <ToastContainer />
     </div>
   );
 };
