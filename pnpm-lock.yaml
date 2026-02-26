@@ -29,6 +29,9 @@ importers:
       maath:
         specifier: ^0.5.2
         version: 0.5.3(@types/three@0.183.1)(three@0.149.0)
+      prop-types:
+        specifier: ^15.8.1
+        version: 15.8.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
